@@ -6,8 +6,8 @@ __pycache__/
 venv/
 
 # Django migrations
-*.sqlite3
-*.log
+*/migrations/*.py
+!*/migrations/__init__.py
 
 # IDE configuration files
 .vscode/
@@ -18,3 +18,16 @@ venv/
 
 # Other common files
 *.db
+
+# Database files
+*.sqlite3
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Static and media files (if auto-generated)
+static/
+media/
