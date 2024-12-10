@@ -31,3 +31,6 @@ venv/
 # Static and media files (if auto-generated)
 static/
 media/
+
+admin user: nozib
+admin pass: nozib
