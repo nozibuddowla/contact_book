@@ -11,6 +11,11 @@
 <body>
     <h1>Welcome to my Contact Application Homepage!</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto ratione facere, saepe, tempora eligendi unde enim assumenda ducimus, dolorem aspernatur doloremque ipsa? Quos esse facilis soluta assumenda ab aliquid?</p>
-    <p> Your name is:  {{ name }} </p>
+    <div>
+        {% for contact in contacts %}
+            <li> {{ contact.name }} - {{ contact.phone }} | {{ contact.email }} </li>
+        {% endfor %}
+    </div>
+    
 </body>
 </html>
